@@ -6,12 +6,12 @@ const cors = require('cors');
 // Express App
 const app = express();
 require('dotenv').config();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 const pool = new Pool({
   connectionString: process.env.connectionString,
 });
 // Middleware
-app.use(cors());
+app.use(cors({ origin: 'https://reservebooksystem.netlify.app/' }));
 app.use(bodyParser.json());
 
 // Initialize Seats (Run this once to create initial seats)
