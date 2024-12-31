@@ -40,7 +40,7 @@ initializeSeats();
 // User Signup
 app.get('/',(req,res)=>{
 try{
-res.send("Hi this is backend site"};
+res.send("Hi this is backend site");
 }
 catch(err)
 {
@@ -61,9 +61,7 @@ app.post('/api/auth/signup', async (req, res) => {
   }
 });
 
-app.get("/",(req,res)=>{
-res.send("HI Here is backend this side");
-}
+
 app.post('/api/auth/login', async (req, res) => {
   const { username, password } = req.body;
 
