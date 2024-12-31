@@ -11,7 +11,7 @@ const pool = new Pool({
   connectionString: process.env.connectionString,
 });
 // Middleware
-app.use(cors({ origin: 'https://reservebooksystem.netlify.app/' }));
+app.use(cors({ origin: 'https://reservebooksystem.netlify.app' }));
 app.use(bodyParser.json());
 
 // Initialize Seats (Run this once to create initial seats)
