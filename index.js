@@ -38,6 +38,15 @@ initializeSeats();
 // Routes
 
 // User Signup
+app.get('/',(req,res)=>{
+try{
+res.send("Hi this is backend site"};
+}
+catch(err)
+{
+console.log(err);
+}
+}
 app.post('/api/auth/signup', async (req, res) => {
   const { username, email, password } = req.body;
   try {
