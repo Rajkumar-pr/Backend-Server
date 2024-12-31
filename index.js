@@ -52,7 +52,9 @@ app.post('/api/auth/signup', async (req, res) => {
   }
 });
 
-// User Login
+app.get("/",(req,res)=>{
+res.send("HI Here is backend this side");
+}
 app.post('/api/auth/login', async (req, res) => {
   const { username, password } = req.body;
 
